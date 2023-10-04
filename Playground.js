@@ -41,6 +41,54 @@ export const Playground = () => {
                     height: orientation === 'landscape' ? '100%' : '30%',  
                 }}>
             </View>
+            <View style={{
+                backgroundColor: '#FFF',
+                flex: 1,
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+
+            }}>
+                <View 
+                style={{
+                    backgroundColor: "dodgerblue", 
+                    height: 100,
+                    width: 100,
+                }}
+                />
+                <View 
+                style={{
+                    backgroundColor: "gold", 
+                    height: 100,
+                    width: 100,
+                    top: 20,
+                    left: 20,
+                    position: "absolute"
+                }}
+                />
+                <View 
+                style={{
+                    backgroundColor: "tomato", 
+                    height: 100,
+                    width: 100,
+                }}
+                />
+                {/* <View 
+                style={{
+                    backgroundColor: "grey", 
+                    height: 100,
+                    width: 100,
+                }}
+                />
+                <View 
+                style={{
+                    backgroundColor: "greenyellow", 
+                    height: 100,
+                    width: 100,
+                }}
+                /> */}
+
+            </View>
         </SafeAreaView>
     );
 }
