@@ -1,13 +1,13 @@
 // import { StatusBar } from "expo-status-bar";
-import { StyleSheet,  View, SafeAreaView , Platform, StatusBar} from "react-native";
+import { StyleSheet,  View, SafeAreaView , Platform, StatusBar } from "react-native";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
-// import { Playground } from "./Playground.js";
 
 export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-
+      <WelcomeScreen />
     </SafeAreaView>
 
   );
