@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View, SafeAreaView, Platform, Image, StatusBar, TouchableWithoutFeedback, TouchableHighlight, TouchableOpacity, Button, Alert } from "react-native";
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks'
 
 export const Playground = () => {
-
+    const orientation = useDeviceOrientation()
 
     return (
-        <SafeAreaView style={[styles.container, containerStyle , {backgroundColor: 'blue'}]}>
+        <SafeAreaView style={[styles.container, containerStyle , {backgroundColor: '#EEE'}]}>
             <StatusBar style="auto" />
             {/* <Text 
             // numberOfLines={1} 
@@ -33,6 +34,13 @@ export const Playground = () => {
             title="No click me"
             onPress={() => Alert.prompt('Title', 'Enter Text', text => console.log(text))}
             />
+
+            <View style={{
+                    backgroundColor: 'dodgerblue',
+                    width: '100%',
+                    height: orientation === 'landscape' ? '100%' : '30%',  
+                }}>
+            </View>
         </SafeAreaView>
     );
 }
